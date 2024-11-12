@@ -7,10 +7,11 @@ header{
     
 }
 #bg {
-    width:2000px; 
+    width:800px; 
     height:500px;
-    background-color: grey;
-    background-image: url("/images/Dunes-Enhanced.png");
+    
+    background: url("/images/Dunes-Enhanced.png") no-repeat;
+    
 
 }
 nav {
