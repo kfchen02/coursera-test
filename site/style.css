@@ -1,6 +1,35 @@
-body{
-    font-weight: 600;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: gray;
-    font-size: 2em;
+header{
+    text-align: center;
+    background-color: orange;
+    font-family: comic sans ms, cursive;
+    font-size: 4em;
+    padding: 30px;
+    
 }
+#bg {
+    width:800px; 
+    height:500px;
+    
+    background: url("/images/Dunes-Enhanced.png") no-repeat;
+    
+
+}
+nav {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #b4ecc8;
+    padding: 10px;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+nav a:hover, nav a:active {
+    font-weight: bolder;
+    color: white;
+}
+
