@@ -1,9 +1,17 @@
 header{
     text-align: center;
     background-color: orange;
+    font-family: comic sans ms, cursive;
     font-size: 4em;
-    padding: 100px;
-    height: 100px;
+    padding: 30px;
+    
+}
+#bg {
+    width:2000px; 
+    height:500px;
+    background-color: grey;
+    background-image: url("/images/Dunes-Enhanced.png");
+
 }
 nav {
     text-align: center;
@@ -18,11 +26,8 @@ nav a {
     font-size: 18px;
 }
 
-nav:hover, nav:active {
-    font-style: Arial, sans-serif;
-    color: green;
+nav a:hover, nav a:active {
+    
+    color: white;
 }
 
-div.links li:nth-child(3){
-    background-color: red;
-}
