@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 header{
     text-align: center;
     background-color: orange;
@@ -11,9 +14,18 @@ header{
     height:500px;
     
     background: url("/images/Dunes-Enhanced.png") no-repeat;
-    
-
 }
+p { 
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+/* #p1 {
+    background-color: #c65e5e;
+}
+#p2 {
+    background-color: #d47af8;
+  } */
 nav {
     text-align: center;
     margin-top: 20px;
