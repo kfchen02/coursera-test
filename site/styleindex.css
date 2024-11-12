@@ -1,0 +1,28 @@
+header{
+    text-align: center;
+    background-color: orange;
+    font-size: 4em;
+    padding: 100px;
+    height: 100px;
+}
+nav {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #ffb74d;
+    padding: 10px;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav:hover, nav:active {
+    font-style: Arial, sans-serif;
+    color: green;
+}
+
+div.links li:nth-child(3){
+    background-color: red;
+}
