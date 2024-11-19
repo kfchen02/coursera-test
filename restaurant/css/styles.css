@@ -9,14 +9,29 @@ body {
     line-height: normal;
     border-radius: 0;
     border: 0;
+    display: flex;              /* Use Flexbox to align items */
+    align-items: center; 
 }
 #logo-img {
     background: url("/img/Temple-of-Heaven.png") no-repeat;
     background-size: contain;
-    height: 70px;          
+    height: 100px;          
     width: auto;            
     margin: 10px 15px 10px 0;
     object-fit: contain;    
+}
+.navbar-brand h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#c47d7d;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+    text-decoration: none;
 }
 
 .lato-regular {
