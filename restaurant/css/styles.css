@@ -1,3 +1,8 @@
+@media (min-width: 768px) {
+    #logo-img {
+        display: inline-block; /* Show image on medium and larger screens */
+    }
+}
 body {
     font-size: 48px;
     color: #c47d7d;
@@ -6,49 +11,33 @@ body {
 }
 #header-nav{
     background-color: #8fe0fb;
-    line-height: normal;
+    
+    
     border-radius: 0;
     border: 0;
-    display: flex;              /* Use Flexbox to align items */
-    align-items: center; 
+    
 }
 #logo-img {
-    background: url("/img/Temple-of-Heaven.png") no-repeat;
+    background: url("/restaurant/img/Temple-of-Heaven.png") no-repeat;
     background-size: contain;
-    height: 100px;          
-    width: auto;            
+    float: left;
+    height: 200px;          
+    width: 200px;            
     margin: 10px 15px 10px 0;
-    object-fit: contain;    
+        
 }
 .navbar-brand h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:#c47d7d;
+    font-family: "Lato", sans-serif;
+    color: black;
     text-transform: uppercase;
     font-weight: bold;
     text-shadow: 1px 1px 1px #222;
     margin-top: 0;
     margin-bottom: 0;
+    padding-top: 20px;
     
 }
 .navbar-brand a:hover, .navbar-brand a:focus{
     text-decoration: none;
 }
-
-.lato-regular {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .lato-bold {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .lato-regular-italic {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
   
