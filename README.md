@@ -1,2 +1,4 @@
 # coursera-test
-whatever I want to say here 
+https://kfchen02.github.io/coursera-test/restaurant
+
+https://kfchen02.github.io/coursera-test/site
