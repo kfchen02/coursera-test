@@ -1,3 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    text-align: center;
+    background-color: rgb(122, 112, 237);
+    font-size: 4em;
+    padding: 30px;
+    
+}
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 15px;
+    float: right;
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+}
+nav a:hover, nav a:active {
+    color: white;
+    text-decoration: none;
+}
 .row{
     margin-bottom: 15px;
 }
