@@ -1,27 +1,43 @@
 *{
     box-sizing: border-box;
 }
-header{
-    text-align: center;
-    background-color: rgb(122, 112, 237);
-    font-size: 4em;
-    padding: 30px;
-    
+body{
+    background-color: antiquewhite;
 }
-nav a {
+.stylenav .links a {
     color: black;
     text-decoration: none;
     margin: 15px;
     float: right;
-    font-family: "Inter", sans-serif;
     font-size: 30px;
 }
-nav a:hover, nav a:active {
-    color: white;
-    text-decoration: none;
+.stylenav .logo a{
+    color: black;
+    float: left;
+    margin:15px;
+    font-size: 30px;
+}
+.stylenav .logo a:hover a:active {
+    color: red;
+    
+}
+section.intro{
+    clear: both;
+    font-family: "Inter", sans-serif;
+    margin: 15px;
+    font-size: 2em;
+    color:black;
+
+}
+
+section .name {
+    /* font-size: 3em; */
+    font-weight: bold;
 }
 .row{
     margin-bottom: 15px;
+    font-family: "Inter", sans-serif;
+
 }
 .row > div {
     border: 3px solid green;
