@@ -3,10 +3,13 @@
 }
 body{
     background-color: antiquewhite;
+    font-family: "Inter", sans-serif;
+
 }
 .stylenav .links a {
     color: black;
     text-decoration: none;
+    padding-right: 15px;
     margin: 15px;
     float: right;
     font-size: 30px;
@@ -14,6 +17,7 @@ body{
 .stylenav .logo a{
     color: black;
     float: left;
+    padding-left: 15px ;
     margin:15px;
     font-size: 30px;
 }
@@ -21,25 +25,77 @@ body{
     color: red;
     
 }
-section.intro{
+.intro{
     clear: both;
-    font-family: "Inter", sans-serif;
     margin: 15px;
+    padding: 40px 0px 0px 80px;
     font-size: 2em;
     color:black;
+    display: block;
 
 }
+.intro .introduction {
+    font-size: 0.8em;
+}
 
-section .name {
-    /* font-size: 3em; */
+.intro .name {
+    font-size: 3em;
     font-weight: bold;
+    padding-top: 10px;
+    /* padding-bottom: 10px; */
+    line-height: 1;
+    
 }
-.row{
-    margin-bottom: 15px;
-    font-family: "Inter", sans-serif;
+.intro .shortbio {
+    font-size: 3em;
+    font-weight: bold;
+    color:grey;
+    line-height: 1;
 
 }
-.row > div {
-    border: 3px solid green;
-    background-color: bisque;
+
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+    gap: 50px;
+}
+
+.about-me .text {
+    flex: 1;
+    max-width: 50%;
+    font-size: 1.3em;
+}
+
+.about-me .image {
+    flex: 1;
+    max-width: 45%;
+}
+
+.about-me img {
+    width: 100%;
+    max-width: 280px; /* Adjust the image size */
+    height: auto;
+    border-radius: 20px; /* Optional: rounded corners */
+}
+
+.about-me h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.about-me p {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.footer {
+    font-family: "Inter", sans-serif;
+    margin-top: auto; /* Pushes the footer to the bottom */
+    background-color: gray; /* Dark background color */
+    color: white; /* White text color */
+    text-align: center; /* Center-align text */
+    padding: 20px; /* Space around the text */
+    font-size: 1.2em; /* Adjust the font size */
 }
