@@ -70,7 +70,7 @@ body{
 
 .about-me .image {
     flex: 1;
-    max-width: 45%;
+    max-width: 35%;
 }
 
 .about-me img {
@@ -92,10 +92,15 @@ body{
 
 .footer {
     font-family: "Inter", sans-serif;
-    margin-top: auto; /* Pushes the footer to the bottom */
+    position: relative;
     background-color: gray; /* Dark background color */
     color: white; /* White text color */
     text-align: center; /* Center-align text */
     padding: 20px; /* Space around the text */
     font-size: 1.2em; /* Adjust the font size */
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
 }
