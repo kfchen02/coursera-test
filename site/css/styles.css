@@ -74,10 +74,14 @@ body{
 }
 
 .about-me img {
-    width: 100%;
-    max-width: 280px; /* Adjust the image size */
+    /* transform: scale(1)); */
+    /* width: 80%;
+    max-width: 80%; */
+    max-width: 280px; 
     height: auto;
-    border-radius: 20px; /* Optional: rounded corners */
+    border-radius: 20px; /*Optional: rounded corners */
+    border: solid black;
+    border-width: 5px;
 }
 
 .about-me h1 {

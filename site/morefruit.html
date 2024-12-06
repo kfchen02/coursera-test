@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About our fruit stand, providing fresh and local fruits to the community.">
+    <title>About Us - Fresh Fruit Stand</title>
+    <link rel ="stylesheet" href ="css/fruit-style.css">
+</head>
+<body>
+
+<header>
+    <h1>Fresh Fruit Stand</h1>
+    <p>Your Local Source for Fresh, Delicious Fruits!</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<!-- Hamburger menu toggle -->
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<section>
+    <h2>About Us</h2>
+    <p>At Fresh Fruit Stand, we are passionate about providing our community with the freshest and healthiest fruits directly from local farms. Our stand offers a wide variety of seasonal fruits, from juicy strawberries to crisp apples, and everything in between. We believe in supporting local agriculture while offering top-quality produce to our customers.</p>
+    <p>Our goal is simple: to make healthy eating easy and accessible. We hand-pick every fruit and ensure it’s ripe, sweet, and ready to eat. Whether you're shopping for your daily snacks or preparing for a family gathering, we have the perfect fruits for any occasion.</p>
+
+    <div class="about-images">
+        <img src="images/hand.jpg" alt="Fresh apples" onclick="openLightbox(this)">
+        <img src="images/banana.jpg" alt="Fresh bananas" onclick="openLightbox(this)">
+        <img src="images/orange.jpg" alt="Fresh oranges" onclick="openLightbox(this)">
+    </div>
+
+    <p>Come visit us today and taste the difference of fresh, local fruit!</p>
+
+    <!-- Canvas for drawing a fruit -->
+    <h2>Try Drawing Your Own Fruit!</h2>
+    <canvas id="fruitCanvas" width="400" height="400"></canvas>
+    <p>Use your mouse to draw a fruit shape. Have fun!</p>
+    <button onclick="clearCanvas()">Clear Canvas</button>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-image" src="" alt="Large view">
+</div>
+
+<footer>
+    <p>&copy; 2024 Fresh Fruit Stand. All Rights Reserved.</p>
+</footer>
+
+<!-- <script>
+    // Toggle menu for mobile
+    function toggleMenu() {
+        const nav = document.querySelector('nav');
+        nav.classList.toggle('active');
+    }
+
+    // Lightbox functionality
+    function openLightbox(image) {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.getElementById('lightbox-image');
+        lightboxImage.src = image.src;
+        lightbox.classList.add('active');
+    }
+
+    function closeLightbox() {
+        const lightbox = document.getElementById('lightbox');
+        lightbox.classList.remove('active');
+    }
+
+    // Smooth Scroll (optional if you have anchor links)
+    document.querySelectorAll('a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Canvas Drawing
+    const canvas = document.getElementById('fruitCanvas');
+    const ctx = canvas.getContext('2d');
+    let drawing = false;
+
+    // Start drawing when mouse is down
+    canvas.addEventListener('mousedown', (e) => {
+        drawing = true;
+        ctx.beginPath();
+        ctx.moveTo(e.offsetX, e.offsetY);
+    });
+
+    // Draw on the canvas as the mouse moves
+    canvas.addEventListener('mousemove', (e) => {
+        if (drawing) {
+            ctx.lineTo(e.offsetX, e.offsetY);
+            ctx.stroke();
+        }
+    });
+
+    // Stop drawing when mouse is up
+    canvas.addEventListener('mouseup', () => {
+        drawing = false;
+    });
+
+    // Clear the canvas
+    function clearCanvas() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }
+</script> -->
+
+<script src="js/fruit-script.js"></script>
+</body>
+</html>
+
