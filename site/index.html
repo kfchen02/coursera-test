@@ -17,7 +17,10 @@
                 <div class = "logo">
                     <a href = "https://kfchen02.github.io/coursera-test/site"><i class="bi bi-house"></i> </a>
                 </div>
-                <div class = "links">
+                <div class="menu-icon" id="menuIcon">
+                    <i class="bi bi-list"></i>
+                </div>
+                <div class = "links" id = "navLinks">
                     <ul>
                         <a href = "https://www.linkedin.com/in/kevin-chen-7891a723a/" target ="_blank" title = "LinkedIn"><i class="bi bi-linkedin"></i></i></a>
                         <a href = "mailto:kfchen02@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
@@ -64,6 +67,16 @@
             Designed by <a href = "https://kfchen02.github.io/coursera-test/site/fruit.html"> Kevin </a> in Greenfield
 
         </footer>
+
+        <script>
+            // JavaScript to toggle menu
+            const menuToggle = document.getElementById('menuIcon');
+            const navLinks = document.getElementById('navLinks');
+
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        </script>
         
     </body>
 </html>

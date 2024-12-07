@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
 }
+
 body{
     background-color: antiquewhite;
     font-family: "Inter", sans-serif;
@@ -21,10 +22,10 @@ body{
     margin:15px;
     font-size: 30px;
 }
-.stylenav .logo a:hover a:active {
-    color: red;
-    
+.menu-icon {
+    display: none;
 }
+
 .intro{
     clear: both;
     margin: 15px;
@@ -74,14 +75,11 @@ body{
 }
 
 .about-me img {
-    /* transform: scale(1)); */
-    /* width: 80%;
-    max-width: 80%; */
     max-width: 280px; 
     height: auto;
-    border-radius: 20px; /*Optional: rounded corners */
-    border: solid black;
-    border-width: 5px;
+    border-radius: 20px; 
+    /*border: solid black;
+    border-width: 5px; */ 
 }
 
 .about-me h1 {
@@ -107,4 +105,52 @@ body{
 .footer a{
     text-decoration: none;
     color: white;
+}
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .links {
+        display: none; /* Hide links */
+        flex-direction: column;
+        gap: 10px;
+        background-color: #f8f9fa;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        padding: 8px 5px 0px 0px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        float: right;
+        padding-left: 15px ;
+        margin:15px;
+        font-size: 30px; 
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;   /* Center-align content */
+        max-width: 100%;
+    }
+
+    .about-me .image {
+        margin-bottom: 20px; /* Add spacing below the image */
+        align-content: center;
+        text-align: center;
+    }
+
+    .about-me .text {
+        text-align: center; /* Optional: Center-align text */
+        max-width: 100%;
+    }
 }

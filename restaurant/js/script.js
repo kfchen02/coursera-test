@@ -1,15 +1,7 @@
-var m = 'in global'
-
-console.log("Hello this is " + m)
-
-var a = function() {
-    var m = "not in global"
-
-    console.log("another message but " + m)
-    b()
+function Rectangle (a,b){
+    this.area = a*b;
+    this.perimeter = 2*(a+b);
 }
 
-function b() {
-    console.log("b function variable " + m)
-}
-a()
+var block = new Rectangle(3,5);
+console.log(block.area)
